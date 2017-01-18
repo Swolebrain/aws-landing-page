@@ -1,0 +1,29 @@
+#home .home-text-wrapper{
+  background-color: #10101f;
+}
+.home-logo-text a{
+  background-color: #fafaff;
+  color: #10101f;
+  transition: color 400ms ease-in, background-color 400ms ease-in;
+}
+.home-logo-text a:hover{
+  color: #fafaff;
+  background-color: #10101f;
+}
+.row-flex{
+  display: flex;
+  padding: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.flex-col-3{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  flex-basis: 300px;
+  padding: 2rem;
+}
+#techlaunch-logo{
+  width: 100px;
+}
