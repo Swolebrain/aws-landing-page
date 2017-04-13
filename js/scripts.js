@@ -15,6 +15,10 @@ jQuery(document).ready(function($){
   });
 
   $(document).on("scroll", function(){
+    if (window.location.pathname != "/"
+        && window.location.pathname != '/aws/'
+        && window.location.pathname.indexOf("/index.html") == -1 ) return;
+
     if (document.body.scrollTop + 250 > $("#list-title").offset().top &&
         $(".animated").length == 0){
           console.log("triggering animation");
