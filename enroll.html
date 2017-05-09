@@ -64,15 +64,15 @@
         </div><!-- END FOUR COLUMNS -->
 
 
+        <!-- START NAVIGATION MENU ITEMS -->
         <div class="twelve columns">
-          <!-- START NAVIGATION MENU ITEMS -->
           <ul class="main-menu large nav" id="nav">
             <li><a href="index.html">Course Overview </a></li>
             <li><a class="highlight" href="enroll.html">Enroll Now</a></li>
           </ul>
-          <!-- END NAVIGATION MENU ITEMS -->
-        </div><!-- END TWELVE COLUMNS -->
-      </div><!-- END CONTAINER -->
+
+        </div>
+      </div>
     </nav>
     <!-- END NAVIGATION -->
 
@@ -82,101 +82,87 @@
 
       <div class="container">
         <div class="row">
-          <div class="sixteen columns">
-            <!-- START TITLE -->
-            <div class="title">
-              <h1>Launch Today</h1>
-            </div><!-- END TITLE -->
-            <h6 style="text-transform:none">TechLaunch offers the same class
-              schedule as executive MBA programs in order to accommodate
-              for working professionals.<br />  <br />
-            All classes take place at
-            <span class="highlight">Pipeline Doral:</span>
-            8400 NW 36th St #450, Doral, FL 33166
+          <form id="enrollment-form" >
+            <input type="hidden" value="" />
+            <h1>Enrollment Form</h1>
+            <h4>Course: AWS Certified Solutions Architect - Associate Test Prep</h4>
+            <h5>Total Price: $1,150  -  Down Payment: $600</h5>
+            <h5>Registration Fee: $50</h5>
+            <h5>Books and Supplies: included in cost</h5>
+            <h4>Total Cost: $1,200</h4>
+            <div class="form-row">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name">
+              <label for="dob">Date of Birth:</label>
+              <input type="text" name="dob" id="dob">
+            </div>
+            <div class="form-row">
+              <label for="address">Home Address:</label>
+              <input type="text" name="address" id="address">
+            </div>
+            <div class="form-row">
+              <label for="city">City</label>
+              <input type="text" name="city" id="city">
+              <label for="state">State</label>
+              <input type="text" name="state" id="state">
+              <label for="zip">zip</label>
+              <input type="text" name="zip" id="zip">
+            </div>
+            <!-- <div class="form-row">
+              <label for="cell">Cell Phone</label>
+              <input type="text" name="cell" id="cell">
+              <label for="email">Email Address</label>
+              <input type="text" name="email" id="email">
+            </div> -->
+            <div class="form-row">
+              <label for="cell">Cell Phone</label>
+              <input type="text" name="cell" id="cell">
+              <label for="email">Email Address</label>
+              <input type="text" name="email" id="email">
+            </div>
+            <div class="form-row">
+              <label for="start-date">Start Date:</label>
+              <select name="start-date" id="start-date">
+                <option value="05-12-2017">04-12-2017</option>
+                <option value="06-16-2017">06-17-2017</option>
+              </select>
+              <label for="hours">Class Hours:</label>
+              <label for="hours2">Friday 6pm-10pm, Saturday 10am-3pm</label>
+            </div>
+            <div>
+            <h6>This Enrollment Agreement (“Agreement”) is a legally binding contract between Florida Vocational Institute (the “School”) and me (the “Student”).
+            A certificate of completion will be awarded if I complete the continuing education course requirements.
             </h6>
-            <br><br><br>
-            <h3 class="highlight">Class Schedule</h3>
-            <h6 style="text-transform:none">
-              Friday at 6:30pm to 11:00pm and Saturday at 10:00am to
-                3:00 pm.
-            </h6>
-            <br><br>
-            <h3 class="highlight">Duration and Cost</h3>
-            <h6 style="text-transform:none">
-              Class duration is 4 weeks. Total cost is $1,200 for 40 hours of mentored learning under a certified AWS professional.
-            </h6>
-            <br><br><br>
-            <h3 class="highlight">What you get</h3>
-            <h6 style="text-transform:none">
-              Practical experience in real-world applications: <br /><br />
-              <ul>
-                <li>Deploy real life web applications (php and nodejs) to Amazon's cloud</li>
-                <li>Build a secure cloud file sotrage solution with tiered access on S3</li>
-                <li>Build API's and a serverless infrastructure with Lambda</li>
-              </ul>
-            </h6>
-            <br><br><br>
-            <h3 class="highlight">Enrollment Requirements</h3>
-            <h6 style="text-transform:none">
-              In order to enroll, you will need to complete our enrollment agreement
-              and give a $600 down payment.
-              <br><br>The remaining balance is due on the first day of class.
-            </h6>
-            <br><br><br>
-          </div><!-- END SIXTEEN COLUMNS -->
+            <div>
+              <h6><input id="terms-checkbox" type="checkbox">By enrolling in this program I agree to the program
+              <a href="EA-AWS.docx">terms and conditions</a></h6>
+            </div>
+          </div>
+        </form><!-- END ENROLLMENT FORM -->
+        <form id="paypal-btn"
+          
+          action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="KXZ5PN7P5W8MA">
+          <!-- <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"> -->
+          <button id="paypal-btn" type="submit" class="highlight-inverted">
+            <h3 class="highlight-inverted" >
+              Pay With PayPal
+            </h3>
+          </button>
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
+
         </div><!-- END ROW -->
       </div><!-- END CONTAINER -->
-
-
-
-
-      <div class="fullwidth grey">
-        <div class="container">
-          <div class="fancy-header2">
-            <h2 class="highlight">
-              AWS Solutions Architect Test Prep Course
-            </h2>
-          </div>
-
-          <div class="row">
-            <div class="container">
-
-              <h3>Are you Ready to Launch your IT career to the next Level?</h3>
-              <div class="home-logo-text">
-                <a href="./enrollment.html">Enroll Now</a>
-              </div>
-              <!-- <form action="https://www.paypal.com/cgi-bin/webscr"
-              method="post" target="_top" id="aws-form">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="KXZ5PN7P5W8MA">
-                <table>
-                <tr><td><input type="hidden" name="on0" value="Schedule"></td></tr><tr><td>
-                <select name="os0">
-                  <option value="Executive Schedule">Executive Schedule $1,299.00 USD</option>
-                	<option value="Weeknight Schedule">Weeknight Schedule $1,299.00 USD</option>
-                	<option value="Boot Camp Schedule">Boot Camp Schedule $3,299.00 USD</option>
-                </select> </td></tr>
-                </table>
-                <input type="hidden" name="currency_code" value="USD">
-                <button type="submit" class="highlight-inverted">
-                  <h3 class="highlight-inverted" >
-                    Pay With PayPal
-                  </h3>
-                </button>
-                
-              </form> -->
-            </div><!-- END CONTAINER -->
-          </div><!-- END ROW -->
-        </div><!-- END CONTAINER -->
-      </div>
-
-
 
     </div>
 
     <div class="container commitment">
       <div class="row">
         <div class="sixteen columns">
+          <br><br><br>
           <h1>Our Commitment to Applicants</h1>
           <h6 style="text-transform:none">
             We are committed to delivering a classroom experience like no other.
@@ -241,6 +227,7 @@
     <script type="text/javascript" src="js/bootstrap-modal.js"></script>
     <script type="text/javascript" src="js/shortcodes.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <script src="js/validateForm.js"></script>
 
 
 
