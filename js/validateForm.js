@@ -1,4 +1,5 @@
 document.getElementById("paypal-btn").addEventListener("click",validateForm);
+document.getElementById("paypal-btn-installment").addEventListener("click",validateForm);
 function validateForm(e){
   e.preventDefault();
   e.stopPropagation();
