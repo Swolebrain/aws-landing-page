@@ -1,8 +1,10 @@
 document.getElementById("paypal-btn").addEventListener("click",validateForm);
 document.getElementById("paypal-btn-installment").addEventListener("click",validateForm);
+
 function validateForm(e){
   e.preventDefault();
   e.stopPropagation();
+  console.log(this.id);
   var dataForm = $("#enrollment-form")[0];
   var df = dataForm;
   if (df.name.value.length < 3 ||
@@ -34,8 +36,14 @@ function validateForm(e){
   }
   //here I need the form data serialized into a custom
   //form field in paypal form
-  document.getElementById("paypal-btn").removeEventListener("click",validateForm);
-  document.querySelector("#paypal-btn h3").innerHTML = "Please Wait..."
+  var selector = "paypal-btn-installment";
+  var frmObj = "paypal-form-installment";
+  if (this.id ==="paypal-btn"){
+     selector = "paypal-btn";
+     frmObj = "paypal-form"
+  }
+  document.getElementById(selector).removeEventListener("click",validateForm);
+  document.querySelector("#" + selector + " h3").innerHTML = "Please Wait..."
   $.ajax({
     url: "http://fvi-grad.com:4004/enrollment",
     type: 'POST',
@@ -49,7 +57,8 @@ function validateForm(e){
       if (res.error){
         alert("Form sending failed, please refresh the page and try again.");
       }
-      $("#paypal-btn").submit();
+      $("#"+frmObj).submit();
+
     }
   });
 }
