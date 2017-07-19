@@ -89,6 +89,7 @@
 .form-row{
   display: flex;
   margin: 2rem 0;
+  flex-wrap: wrap;
 }
 #enrollment-form label{
   font-family: 'BebasNeueRegular', sans-serif;

@@ -19,7 +19,7 @@ function validateForm(e){
         return alertAndFail("Please input your city")
   }
   if (df.state.value.length != 2){
-        return alertAndFail("Please input your state")
+        return alertAndFail("Please input a valid two letter state")
   }
   if (df.zip.value.length != 5){
         return alertAndFail("Please input your 5-digit zip")
